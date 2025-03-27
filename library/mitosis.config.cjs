@@ -5,14 +5,24 @@
 module.exports = {
   "files": "src/**",
   "targets": [
-    "react"
+    "react",
+    "vue",
+    "angular",
+    "reactNative"
   ],
   "dest": "packages",
   "commonOptions": {
     "typescript": true
   },
   "options": {
+    "reactNative": {},
     "react": {
+      "stylesType": "style-tag"
+    },
+    "vue": {
+      "stylesType": "style-tag"
+    },
+    "angular": {
       "stylesType": "style-tag"
     },
     "svelte": {},
